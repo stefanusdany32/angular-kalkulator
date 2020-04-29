@@ -27,5 +27,6 @@ export class AppComponent  {
       this.value = this.varglob.gethasil();
       this.angka1 = this.varglob.getangka1();
       this.angka2 = this.varglob.getangka2();
+      this.operator = this.varglob.getoperator();
    }
 }
