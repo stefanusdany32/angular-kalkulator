@@ -14,10 +14,7 @@ export class AppComponent  {
   angka1;
   angka2;
   operator;
-  constructor(public varglob : GlobalVariableService){
-  
-   
-  }
+  constructor(public varglob : GlobalVariableService){}
    dis(temp){
      this.varglob.dis(temp);
    }
