@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { HomeComponent } from './home/home.component';
 import { Routes, RouterModule } from '@angular/router';
+import { GlobalVariableService } from './global-variable.service';
 
 const ROUTES : Routes =[
   
@@ -16,6 +17,7 @@ const ROUTES : Routes =[
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
   declarations: [ AppComponent, HelloComponent, HomeComponent ],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [GlobalVariableService]
 })
 export class AppModule { }
