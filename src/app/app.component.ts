@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Routes,RouterModule} from '@angular/router';
+import { GlobalConstants } from './common/global-constants';
 
 @Component({
   selector: 'my-app',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
+  GlobalConstants.angka1 ;
 }

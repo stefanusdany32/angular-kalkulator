@@ -5,6 +5,13 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { HomeComponent } from './home/home.component';
+import { Routes, RouterModule } from '@angular/router';
+
+const ROUTES : Routes =[
+  
+ {path:'home', component: HomeComponent}
+
+]
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
