@@ -6,6 +6,7 @@ export class GlobalVariableService {
   public angka2 : number = 0;
   public operator : string = '';
   public value : string = '';
+  public hasil : number = 0;
   constructor() { }
   public setangka1(temp){
     this.angka1 = temp;
@@ -22,6 +23,9 @@ export class GlobalVariableService {
   public getangka1(){
     return this.angka1;
   }
+  public gethasil(){
+    return this.hasil;
+  }
   public getangka2(){
     return this.angka2;
   }
@@ -32,6 +36,7 @@ export class GlobalVariableService {
     if (this.angka1 == 0){
         this.angka1 = temp;
         this.value += temp;
+        
     }
     else if (this.angka2 == 0) {
         this.angka2 = temp;
@@ -40,6 +45,14 @@ export class GlobalVariableService {
     if (this.operator == ''){
          this.value += temp;
          this.operator = temp;
+    }
+  }
+  public ope(){
+    if (this.operator == '+'){
+      this.hasil = this.angka1 + this.angka2;
+    }
+    else  if (this.operator == '-'){
+      this.hasil = this.angka1 - this.angka2;
     }
   }
 

@@ -1,35 +1,36 @@
 <hello name="{{ name }}"></hello>
 <p>
 </p>
+{{angka1}} {{angka2}}
   <table border=""> 
          <tr> 
-            {{hasil}}
+            {{value}}
          
          </tr> 
          <tr> 
-            <td><input type="button" value="1" onclick="dis(1)"/> </td> 
-            <td><input type="button" value="2" onclick="dis(2)"/> </td> 
-            <td><input type="button" value="3" onclick="dis(3)"/> </td> 
+            <td><input type="button" value="1" (click)="dis(1)"/> </td> 
+            <td><input type="button" value="2" (click)="dis(2)"/> </td> 
+            <td><input type="button" value="3" (click)="dis(3)"/> </td> 
             
          </tr> 
          <tr> 
-            <td><input type="button" value="4" onclick="dis(4)"/> </td> 
-            <td><input type="button" value="5" onclick="dis(5)"/> </td> 
-            <td><input type="button" value="6" onclick="dis(6)"/> </td> 
+            <td><input type="button" value="4" (click)="dis(4)"/> </td> 
+            <td><input type="button" value="5" (click)="dis(5)"/> </td> 
+            <td><input type="button" value="6" (click)="dis(6)"/> </td> 
             
          </tr> 
          <tr> 
-            <td><input type="button" value="7" onclick="dis(7)"/> </td> 
-            <td><input type="button" value="8" onclick="dis(8)"/> </td> 
-            <td><input type="button" value="9" onclick="dis(9)"/> </td> 
+            <td><input type="button" value="7" (click)="dis(7)"/> </td> 
+            <td><input type="button" value="8" (click)="dis(8)"/> </td> 
+            <td><input type="button" value="9" (click)="dis(9)"/> </td> 
             
          </tr> 
          <tr> 
            
-            <td><input type="button" value="0" onclick="dis('0')"/> </td> 
-            <td><input type="button" value="=" onclick="getval()"/> </td> 
-            <td><input type="button" value="-" onclick="dis('-')"/> </td> 
-            <td><input type="button" value="+" onclick="dis('+')"/> </td> 
+            <td><input type="button" value="0" (click)="dis(0)"/> </td> 
+            <td><input type="button" value="=" (click)="ope()"/> </td> 
+            <td><input type="button" value="-" (click)="dis('-')"/> </td> 
+            <td><input type="button" value="+" (click)="dis('+')"/> </td> 
             
          </tr> 
       </table>

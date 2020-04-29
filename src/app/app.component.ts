@@ -18,7 +18,11 @@ export class AppComponent  {
    dis(temp){
      this.varglob.dis(temp);
    }
-   getval(){
-     this.varglob.getvalue();
+   ope(){
+    
+     this.varglob.ope();
+      this.value = this.varglob.gethasil();
+      this.angka1 = this.varglob.getangka1();
+      this.angka2 = this.varglob.getangka2();
    }
 }
