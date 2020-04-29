@@ -18,6 +18,9 @@ export class AppComponent  {
    dis(temp){
      this.varglob.dis(temp);
    }
+   diso(temp){
+     this.varglob.diso(temp);
+   }
    ope(){
     
      this.varglob.ope();

@@ -38,11 +38,15 @@ export class GlobalVariableService {
         this.value += temp;
         
     }
+   
     else if (this.angka2 == 0) {
         this.angka2 = temp;
          this.value += temp;
     }
-    if (this.operator == ''){
+    
+  }
+  public diso(temp){
+     if (this.operator == ''){
          this.value += temp;
          this.operator = temp;
     }
